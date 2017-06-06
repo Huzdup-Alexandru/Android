@@ -25,7 +25,7 @@
         tools:layout_editor_absoluteY="5dp">
 
         // To change the buttons weight to be one of these half of layout and rest to fill in the other half you might do layout_weight =
-        "50" and other weight"16.6";
+        "50" and other weight"16.6" and change the layout_height to 0dp;
 
         <Button
             android:id="@+id/button"
