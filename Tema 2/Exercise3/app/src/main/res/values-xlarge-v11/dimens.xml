@@ -1,0 +1,8 @@
+<!--
+This is for tablets
+-->
+<resources>
+
+
+    <dimen name="text_size_xlarge"> 30dp </dimen>
+</resources>

@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Exercise 1</string>
+    <string name="string"><b><u> This text is bold and underlined</u></b></string>
+</resources>
