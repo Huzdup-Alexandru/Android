@@ -24,20 +24,22 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        button = (Button)findViewById(R.id.button);
-        editText1 = (EditText) findViewById(R.id.editText3);
-        editText2 = (EditText) findViewById(R.id.editText4);
-        editText3 = (EditText) findViewById(R.id.editText5);
-        editText4 = (EditText) findViewById(R.id.editText6);
-        editText5 = (EditText) findViewById(R.id.editText7);
+        Button button = (Button) findViewById(R.id.button);
 
                 button.setOnClickListener(new View.OnClickListener(){
                     public void onClick(View view){
-                        Toast.makeText(getApplicationContext(), editText1.getText().toString(), Toast.LENGTH_LONG ).show();
-                        Toast.makeText(getApplicationContext(), editText2.getText().toString(), Toast.LENGTH_LONG ).show();
-                        Toast.makeText(getApplicationContext(), editText3.getText().toString(), Toast.LENGTH_LONG ).show();
-                        Toast.makeText(getApplicationContext(), editText4.getText().toString(), Toast.LENGTH_LONG ).show();
-                        Toast.makeText(getApplicationContext(), editText5.getText().toString(), Toast.LENGTH_LONG ).show();
+                        String date;
+                        EditText editText1 = (EditText) findViewById(R.id.editText3);
+                        EditText editText2 = (EditText) findViewById(R.id.editText4);
+                        EditText editText3 = (EditText) findViewById(R.id.editText5);
+                        EditText editText4 = (EditText) findViewById(R.id.editText6);
+                        EditText editText5 = (EditText) findViewById(R.id.editText7);
+                        date = " Nume : " + editText1.getText()+"\n " +" Prenume : "+ editText2.getText() +"\n " +" Varsta :"+ editText3.getText() +"\n "+" Sexul : "+
+                                editText4.getText() +"\n "+" Ocupatia : "+ editText5.getText();
+
+
+                        Toast.makeText(getApplicationContext(), date , Toast.LENGTH_LONG ).show();
+
 
 
 
