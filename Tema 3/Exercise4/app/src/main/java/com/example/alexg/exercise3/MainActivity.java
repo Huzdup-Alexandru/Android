@@ -4,28 +4,34 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.CheckBox;
+import android.widget.CompoundButton;
 import android.widget.TableRow;
 import android.widget.Toast;
 
-public class MainActivity extends AppCompatActivity {
-    CheckBox checkBox;
+public class MainActivity extends AppCompatActivity implements CompoundButton.OnCheckedChangeListener {
 
-    @Override
-    protected void onCreate(Bundle savedInstanceState) {
+        CheckBox checkBox;
+
+        @Override
+        protected void onCreate (Bundle savedInstanceState){
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
         checkBox = (CheckBox) findViewById(R.id.checkBox);
+            checkBox.setOnCheckedChangeListener(this);
+
+
 
 
     }
-    public void itemClicked(View v){
-        if(((CheckBox)v).isChecked()){
-            Toast.makeText(this, "Checked", Toast.LENGTH_LONG).show();
+    public void onCheckedChanged(CompoundButton buttonView, boolean isChecked){
+        if(isChecked){
             checkBox.setText(R.string.checked);
-        } else{
-            Toast.makeText(this, "Unchecked", Toast.LENGTH_LONG).show();
+        }
+        else {
             checkBox.setText(R.string.unchecked);
         }
     }
+
 }
+

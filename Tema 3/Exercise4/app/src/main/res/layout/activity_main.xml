@@ -13,7 +13,6 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/checkbox"
-        android:onClick="itemClicked"
         tools:layout_editor_absoluteX="67dp"
         tools:layout_editor_absoluteY="142dp" />
 </android.support.constraint.ConstraintLayout>
