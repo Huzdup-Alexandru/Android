@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Exercise 5</string>
+    <string name="title_activity_my_fragment1">MyFragment1</string>
+    <string name="hint">Editor #%d </string>
+</resources>

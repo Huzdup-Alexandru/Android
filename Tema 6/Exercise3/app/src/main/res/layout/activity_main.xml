@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.huzdi.exercise3.MainActivity"
+    android:background="#00BBFF"
+    android:id="@+id/my_layout">
+
+<Button
+    android:text="Add fragment"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/add1"
+    android:onClick="add"/>
+
+    <LinearLayout
+        android:layout_below="@id/add1"
+        android:layout_width="fill_parent"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_height="fill_parent"
+        android:orientation="vertical"
+        android:id="@+id/group">
+
+    </LinearLayout>
+</RelativeLayout>
